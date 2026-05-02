@@ -12,3 +12,4 @@ if st.button("진료 요청하기"):
     with st.spinner("진료 중..."):
         result = llm.invoke(content + "증상에 대해 진료해주세요.")
         st.write(result)
+        max_tokens = 1000
